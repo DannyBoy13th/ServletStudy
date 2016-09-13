@@ -1,0 +1,33 @@
+<web-app
+        xlmns="http://xmlns.jcp.org/xml/ns/javaee"
+        xlmns:xsi="http://www.o3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/webb-application"
+        version="3.1"
+        xmlns:xlmns="http://xmlns.jcp.org/xml/ns/javaee"
+        xmlns:xsi="http://java.sun.com/xml/ns/j2ee">
+
+    <display-name>HelloWorld Application</display-name>
+    <description>First Servlet example.BLA BLA BLA BLA BLA BLA BLA BLA BLA
+        BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA
+    </description>
+
+    <servlet>
+        <servlet-name>Clock</servlet-name>
+        <servlet-class>ua.goit.java.servlets.ClockServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Hello</servlet-name>
+        <servlet-class>ua.goit.java.servlets.HelloServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Clock</servlet-name>
+        <url-pattern>/clock</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Hello</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+
+</web-app>
